@@ -1,6 +1,6 @@
 # In ~/.zshrc above the "source $ZSH/oh-my-zsh.sh" line add the following line: $source ~/.zshrc.user
 
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster-fork"
 
 source ~/.aliases
 
