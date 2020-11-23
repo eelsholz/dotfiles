@@ -110,10 +110,14 @@ prompt_git() {
     repo_path=$(git rev-parse --git-dir 2>/dev/null)
     dirty=$(parse_git_dirty)
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git rev-parse --short HEAD 2> /dev/null)"
+    GIT_STATUS=$(git status)
     if [[ -n $dirty ]]; then
-      prompt_segment yellow black
+      if echo $GIT_STATUS | grep -q 'Untracked file'; then
+        prompt_segment red black
+      else
+        prompt_segment yellow black
+      fi
     else
-      GIT_STATUS=$(git status)
       if echo $GIT_STATUS | grep -q 'Your branch is behind'; then
         prompt_segment cyan $CURRENT_FG
       elif echo $GIT_STATUS | grep -q 'Your branch is ahead'; then
