@@ -114,6 +114,8 @@ prompt_git() {
     if [[ -n $dirty ]]; then
       if echo $GIT_STATUS | grep -q 'Untracked file'; then
         prompt_segment red black
+      elif echo $GIT_STATUS | grep -q 'Changes not staged for commit'; then
+        prompt_segment yellow red 
       else
         prompt_segment yellow black
       fi
