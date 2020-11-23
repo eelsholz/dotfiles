@@ -112,10 +112,15 @@ prompt_git() {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git rev-parse --short HEAD 2> /dev/null)"
     if [[ -n $dirty ]]; then
       prompt_segment yellow black
-    elif git status | grep -q 'Your branch is ahead'; then
-      prompt_segment magenta $CURRENT_FG
     else
-      prompt_segment green $CURRENT_FG
+      GIT_STATUS=$(git status)
+      if echo $GIT_STATUS | grep -q 'Your branch is behind'; then
+        prompt_segment cyan $CURRENT_FG
+      elif echo $GIT_STATUS | grep -q 'Your branch is ahead'; then
+        prompt_segment magenta $CURRENT_FG
+      else
+        prompt_segment green $CURRENT_FG
+      fi
     fi
 
     if [[ -e "${repo_path}/BISECT_LOG" ]]; then
