@@ -1,4 +1,4 @@
-# In ~/.zshrc above the "source $ZSH/oh-my-zsh.sh" line add the following line: $source ~/.zshrc.user
+# In ~/.zshrc above the line "source $ZSH/oh-my-zsh.sh" add the following line: source ~/.zshrc.user
 
 ZSH_THEME="agnoster-fork"
 
