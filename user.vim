@@ -4,6 +4,7 @@ set backupdir=~/.vimfiles " backup files
 set directory=~/.vimfiles " swap files
 set undodir=~/.vimfiles   " undo files
 
+set hlsearch
 set shiftwidth=2
 
 hi StatusLine ctermbg=yellow ctermfg=black 
