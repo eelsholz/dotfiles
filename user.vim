@@ -8,10 +8,11 @@ set hlsearch
 set shiftwidth=2
 
 hi StatusLine ctermbg=yellow ctermfg=black 
-hi StatusLineNC cterm=none
+hi StatusLineNC ctermbg=none ctermfg=black
 hi TabLineSel ctermbg=magenta ctermfg=yellow
-hi TabLine ctermbg=none
+hi TabLine ctermbg=none ctermfg=black
 hi TabLineFill cterm=none
+hi VertSplit ctermbg=none ctermfg=black
 
 " cursor
 let &t_EI .= "\e[1 q" " normal mode blinking block
