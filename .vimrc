@@ -9,7 +9,7 @@ set shiftwidth=2
 
 hi StatusLine ctermbg=yellow ctermfg=black 
 hi StatusLineNC ctermbg=none ctermfg=black
-hi TabLineSel ctermbg=none ctermfg=yellow
+hi TabLineSel ctermbg=none ctermfg=none
 hi TabLine ctermbg=none ctermfg=black
 hi TabLineFill cterm=none
 hi VertSplit ctermbg=none ctermfg=black
