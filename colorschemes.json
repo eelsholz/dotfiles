@@ -21,5 +21,29 @@
     "brightPurple": "#ff00ff", // 201 Magenta1 / 13 Fuchsia
     "cyan": "#00d7af", // 43 Cyan3
     "brightCyan": "#00ffff" // 51 Cyan1 / 14 Aqua
+  },
+  {
+    // https://github.com/primer/primitives/blob/master/primitives/colors.ts
+    "name": "github-primer",
+    "cursorColor": "#808080",
+    "selectionBackground": "#ecf0f1",
+    "background": "#1a2b3c",
+    "foreground": "#ffffff",
+    "black": "#000000",
+    "brightBlack":"#4f5861",
+    "white":"#ecf0f1",
+    "brightWhite":"#ffffff",
+    "red":"#ea4a5a",
+    "brightRed":"#fdaeb7",
+    "green":"#34d058",
+    "brightGreen":"#bef5cb",
+    "blue":"#2188ff",
+    "brightBlue":"#c8e1ff",
+    "yellow":"#ffdf5d",
+    "brightYellow":"#fff5b1",
+    "purple":"#8a63d2",
+    "brightPurple":"#d1bcf9",
+    "cyan":"#15e2e2",
+    "brightCyan":"#a2ecec"
   }
 ]
