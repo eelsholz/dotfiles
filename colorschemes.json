@@ -1,29 +1,28 @@
 [
   {
     "name": "xterm256",
-    "cursorColor": "#bcbcbc", // 250 Grey74
-    "selectionBackground": "#eeeeee", // 255 Grey93
-    "background": "#ffffd7", // 230 Cornsilk1
-    "foreground": "#1c1c1c", // 234 Grey11
-    "black": "#000000", // 16 Grey0 / 0 Black
-    "brightBlack": "#808080", // 244 Grey50 / 8 Grey
-    "white": "#eeeeee", // 255 Grey93
-    "brightWhite": "#ffffff", // 231 Grey 100 / 15 White
-    "red": "#d70000", // 160 Red3
-    "brightRed": "#ff0000", // 196 Red1 / 9 Red
-    "green": "#5fd700", // 76 Chartreuse3
-    "brightGreen": "#00ff00", // 46 Green1 / 10 Lime
-    "blue": "#5f87ff", // 69 CornflowerBlue
-    "brightBlue": "#0000ff", // 21 Blue1 / 12 Blue
-    "yellow": "#ffd700", // 220 Gold1
-    "brightYellow": "#ffff00", // 226 Yellow1 / 11 Yellow
-    "purple": "#d75fd7", // 170 Orchid
-    "brightPurple": "#ff00ff", // 201 Magenta1 / 13 Fuchsia
-    "cyan": "#00d7af", // 43 Cyan3
-    "brightCyan": "#00ffff" // 51 Cyan1 / 14 Aqua
+    "cursorColor": "#bcbcbc",
+    "selectionBackground": "#eeeeee",
+    "background": "#ffffd7",
+    "foreground": "#1c1c1c",
+    "black": "#000000",
+    "brightBlack": "#808080",
+    "white": "#eeeeee",
+    "brightWhite": "#ffffff",
+    "red": "#d70000",
+    "brightRed": "#ff0000",
+    "green": "#5fd700",
+    "brightGreen": "#00ff00",
+    "blue": "#5f87ff",
+    "brightBlue": "#0000ff",
+    "yellow": "#ffd700",
+    "brightYellow": "#ffff00",
+    "purple": "#d75fd7",
+    "brightPurple": "#ff00ff",
+    "cyan": "#00d7af",
+    "brightCyan": "#00ffff"
   },
   {
-    // https://github.com/primer/primitives/blob/master/primitives/colors.ts
     "name": "github-primer",
     "cursorColor": "#808080",
     "selectionBackground": "#ecf0f1",
