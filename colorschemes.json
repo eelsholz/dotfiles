@@ -1,28 +1,5 @@
 [
   {
-    "name": "xterm256",
-    "cursorColor": "#bcbcbc",
-    "selectionBackground": "#eeeeee",
-    "background": "#ffffd7",
-    "foreground": "#1c1c1c",
-    "black": "#000000",
-    "brightBlack": "#808080",
-    "white": "#eeeeee",
-    "brightWhite": "#ffffff",
-    "red": "#d70000",
-    "brightRed": "#ff0000",
-    "green": "#5fd700",
-    "brightGreen": "#00ff00",
-    "blue": "#5f87ff",
-    "brightBlue": "#0000ff",
-    "yellow": "#ffd700",
-    "brightYellow": "#ffff00",
-    "purple": "#d75fd7",
-    "brightPurple": "#ff00ff",
-    "cyan": "#00d7af",
-    "brightCyan": "#00ffff"
-  },
-  {
     "name": "github-primer",
     "cursorColor": "#808080",
     "selectionBackground": "#ecf0f1",
@@ -44,5 +21,28 @@
     "brightPurple":"#d1bcf9",
     "cyan":"#15e2e2",
     "brightCyan":"#a2ecec"
+  },
+  {
+    "name": "xterm256",
+    "cursorColor": "#bcbcbc",
+    "selectionBackground": "#eeeeee",
+    "background": "#ffffd7",
+    "foreground": "#1c1c1c",
+    "black": "#000000",
+    "brightBlack": "#808080",
+    "white": "#eeeeee",
+    "brightWhite": "#ffffff",
+    "red": "#d70000",
+    "brightRed": "#ff0000",
+    "green": "#5fd700",
+    "brightGreen": "#00ff00",
+    "blue": "#5f87ff",
+    "brightBlue": "#0000ff",
+    "yellow": "#ffd700",
+    "brightYellow": "#ffff00",
+    "purple": "#d75fd7",
+    "brightPurple": "#ff00ff",
+    "cyan": "#00d7af",
+    "brightCyan": "#00ffff"
   }
 ]
