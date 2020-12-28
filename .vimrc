@@ -1,4 +1,5 @@
 " This is in addition to sensible.vim (https://github.com/tpope/vim-sensible)
+" and Dim (https://github.com/jeffkreeftmeijer/vim-dim)
 
 set backupdir=~/.vimfiles " backup files
 set directory=~/.vimfiles " swap files
@@ -6,13 +7,6 @@ set undodir=~/.vimfiles   " undo files
 
 set hlsearch
 set shiftwidth=2
-
-hi StatusLine ctermbg=yellow ctermfg=black 
-hi StatusLineNC ctermbg=none ctermfg=black
-hi TabLineSel ctermbg=none ctermfg=none
-hi TabLine ctermbg=none ctermfg=black
-hi TabLineFill cterm=none
-hi VertSplit ctermbg=none ctermfg=black
 
 " cursor
 let &t_EI .= "\e[1 q" " normal mode blinking block
