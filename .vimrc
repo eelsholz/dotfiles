@@ -1,6 +1,8 @@
 " This is in addition to sensible.vim (https://github.com/tpope/vim-sensible)
 " and Dim (https://github.com/jeffkreeftmeijer/vim-dim)
 
+syntax on
+
 set backupdir=~/.vimfiles " backup files
 set directory=~/.vimfiles " swap files
 set undodir=~/.vimfiles   " undo files
