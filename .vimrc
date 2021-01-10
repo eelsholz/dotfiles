@@ -1,13 +1,13 @@
-call plug#begin('~/.vim/plug')
+call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
-Plug 'jeffkreeftmeijer/vim-dim' " after :PlugInstall, rename /vim-dim/colors/ to /vim-dim/plugin/
+Plug 'jeffkreeftmeijer/vim-dim' | runtime plugged/vim-dim/colors/dim.vim
 call plug#end()
-
-syntax on
 
 set backupdir=~/.vimfiles " backup files
 set directory=~/.vimfiles " swap files
 set undodir=~/.vimfiles   " undo files
+
+syntax on
 
 set hlsearch
 set shiftwidth=2
