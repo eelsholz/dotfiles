@@ -1,5 +1,7 @@
-" This is in addition to sensible.vim (https://github.com/tpope/vim-sensible)
-" and Dim (https://github.com/jeffkreeftmeijer/vim-dim)
+call plug#begin('~/.vim/plug')
+Plug 'tpope/vim-sensible'
+Plug 'jeffkreeftmeijer/vim-dim' " after :PlugInstall, rename /vim-dim/colors/ to /vim-dim/plugin/
+call plug#end()
 
 syntax on
 
