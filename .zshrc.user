@@ -1,8 +1,9 @@
-# In ~/.zshrc above the line "source $ZSH/oh-my-zsh.sh" add the following line: source ~/.zshrc.user
+# In ~/.zshrc above the line "source $ZSH/oh-my-zsh.sh" add the following line: source ~/workspaces/dotfiles/.zshrc.user
 
 ZSH_THEME="agnoster-fork"
 
-source ~/.aliases
+# aliases
+alias c='clear'
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
