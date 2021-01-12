@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'jeffkreeftmeijer/vim-dim' | runtime plugged/vim-dim/colors/dim.vim
+Plug 'tpope/vim-surround'
 call plug#end()
 
 set backupdir=~/.vimfiles " backup files
