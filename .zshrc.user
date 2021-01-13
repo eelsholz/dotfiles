@@ -1,6 +1,7 @@
 # In ~/.zshrc above the line "source $ZSH/oh-my-zsh.sh" add the following line: source ~/workspaces/dotfiles/.zshrc.user
-
 ZSH_THEME="agnoster-fork"
+
+plugins=(git vi-mode)
 
 # aliases
 alias c='clear'
