@@ -122,6 +122,8 @@ prompt_git() {
     else
       if echo $GIT_STATUS | grep -q 'Your branch is behind'; then
         prompt_segment cyan $CURRENT_FG
+      elif echo $GIT_STATUS | grep -q 'diverged'; then
+        prompt_segment cyan red
       elif echo $GIT_STATUS | grep -q 'Your branch is ahead'; then
         prompt_segment magenta $CURRENT_FG
       else
