@@ -20,3 +20,6 @@ let &t_SI .= "\e[5 q" " insert mode blinking line
 let &t_SR .= "\e[3 q" " replace mode blinking underline
 noremap <expr> j v:count ? 'j' : 'gj'
 noremap <expr> k v:count ? 'k' : 'gk'
+
+" some overrides to the vim-dim colors
+autocmd ColorScheme * source ~/.vimrc.colors
