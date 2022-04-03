@@ -22,5 +22,12 @@ let &t_SR .= "\e[3 q" " replace mode blinking underline
 noremap <expr> j v:count ? 'j' : 'gj'
 noremap <expr> k v:count ? 'k' : 'gk'
 
+let mapleader="\<Space>"
+" vim-tmux-runner
+noremap <leader>l :VtrOpenRunner {'orientation': 'h', 'percentage': 50}<cr>
+noremap <leader>j :VtrSendLinesToRunner<cr>
+noremap <leader>k :VtrSendCommandToRunner<cr>
+noremap <leader>h :VtrKillRunner<cr>
+
 " some overrides to the vim-dim colors
 autocmd ColorScheme * source ~/.vimrc.colors
