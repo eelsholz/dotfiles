@@ -3,6 +3,7 @@ Plug 'tpope/vim-sensible'
 Plug 'jeffkreeftmeijer/vim-dim' | runtime plugged/vim-dim/colors/dim.vim
 Plug 'tpope/vim-surround'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'christoomey/vim-tmux-runner'
 call plug#end()
 
 set backupdir=~/.vimfiles " backup files
