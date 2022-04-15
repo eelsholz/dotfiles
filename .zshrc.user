@@ -16,6 +16,7 @@ ZSH_HIGHLIGHT_STYLES[command]='fg=yellow'
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=green'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=green'
 ZSH_HIGHLIGHT_STYLES[path]='fg=cyan'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=white'
 
 # aliases
 alias c='clear'
