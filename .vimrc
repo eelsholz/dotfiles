@@ -30,4 +30,4 @@ noremap <leader>k :VtrSendCommandToRunner<cr>
 noremap <leader>h :VtrKillRunner<cr>
 
 " some overrides to the vim-dim colors
-autocmd ColorScheme * source ~/.vimrc.colors
+source ~/.vimrc.colors
