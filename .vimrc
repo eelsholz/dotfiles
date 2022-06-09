@@ -24,9 +24,11 @@ noremap <expr> k v:count ? 'k' : 'gk'
 
 let mapleader="\<Space>"
 " vim-tmux-runner
+let g:VtrClearBeforeSend = 0 " do not clear runner before sending command
 noremap <leader>l :VtrOpenRunner {'orientation': 'h', 'percentage': 50}<cr>
 noremap <leader>j :VtrSendLinesToRunner<cr>
 noremap <leader>k :VtrSendCommandToRunner<cr>
+noremap <leader>i :VtrFlushCommand<cr>
 noremap <leader>h :VtrKillRunner<cr>
 
 " some overrides to the vim-dim colors
