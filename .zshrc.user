@@ -25,7 +25,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# f command
+# f navigation commands
 f () {
   if [ "$1" = "" ]; then
     ls -lah --color
@@ -41,7 +41,14 @@ f () {
   fi
 }
 
-# ff command
 ff () {
   cd ..
+}
+
+fff () {
+  cd ~
+}
+
+ffff () {
+  cd /
 }
