@@ -15,6 +15,8 @@ syntax on
 set hlsearch
 set shiftwidth=2
 
+set statusline+=%F " full file path in status line
+
 " cursor
 let &t_EI .= "\e[1 q" " normal mode blinking block
 let &t_SI .= "\e[5 q" " insert mode blinking line
