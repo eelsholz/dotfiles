@@ -1,7 +1,6 @@
 # In ~/.zshrc above the line "source $ZSH/oh-my-zsh.sh" add the following line: source ~/.zshrc.user
 ZSH_THEME="agnoster-fork"
 
-
 plugins=(\
   git \
   vi-mode \
@@ -25,3 +24,24 @@ alias c='clear'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# f command
+f () {
+  if [ "$1" = "" ]; then
+    ls -lah --color
+    return
+  fi
+  if [ -d "$1" ]; then
+    cd "$1"
+    return
+  fi
+  if [ -f "$1" ]; then
+    vim "$1"
+    return
+  fi
+}
+
+# ff command
+ff () {
+  cd ..
+}
