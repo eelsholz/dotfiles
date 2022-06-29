@@ -15,7 +15,8 @@ syntax on
 set hlsearch
 set shiftwidth=2
 
-set statusline+=%F " full file path in status line
+" https://unix.stackexchange.com/questions/224771/what-is-the-format-of-the-default-statusline
+set statusline=\ %F\ %h%w%m%r%=%l,%-3(%c%)\ %P\ 
 
 " cursor
 let &t_EI .= "\e[1 q" " normal mode blinking block
