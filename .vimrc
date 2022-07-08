@@ -12,7 +12,11 @@ set undodir=~/.vimfiles   " undo files
 
 syntax on
 
+let mapleader="\<Space>"
+
 set hlsearch
+" clear search highlighting with space-space
+noremap <leader><leader> :noh<cr>:<Backspace>
 set shiftwidth=2
 
 " https://unix.stackexchange.com/questions/224771/what-is-the-format-of-the-default-statusline
@@ -25,7 +29,6 @@ let &t_SR .= "\e[3 q" " replace mode blinking underline
 noremap <expr> j v:count ? 'j' : 'gj'
 noremap <expr> k v:count ? 'k' : 'gk'
 
-let mapleader="\<Space>"
 " vim-tmux-runner
 let g:VtrClearBeforeSend = 0 " do not clear runner before sending command
 noremap <leader>l :VtrOpenRunner {'orientation': 'h', 'percentage': 50}<cr>
