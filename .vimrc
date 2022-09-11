@@ -4,6 +4,7 @@ Plug 'jeffkreeftmeijer/vim-dim' | runtime plugged/vim-dim/colors/dim.vim
 Plug 'tpope/vim-surround'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'christoomey/vim-tmux-runner'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 set backupdir=~/.vimfiles " backup files
@@ -19,9 +20,6 @@ set hlsearch
 noremap <leader><leader> :noh<cr>:<Backspace>
 set shiftwidth=2
 
-" https://unix.stackexchange.com/questions/224771/what-is-the-format-of-the-default-statusline
-set statusline=\ %F\ %h%w%m%r%=%l,%-3(%c%)\ %P\ 
-
 " cursor
 let &t_EI .= "\e[1 q" " normal mode blinking block
 let &t_SI .= "\e[5 q" " insert mode blinking line
@@ -36,6 +34,13 @@ noremap <leader>j :VtrSendLinesToRunner<cr>
 noremap <leader>k :VtrSendCommandToRunner<cr>
 noremap <leader>i :VtrFlushCommand<cr>
 noremap <leader>h :VtrKillRunner<cr>
+
+" lightline statusline
+set noshowmode
+" https://vi.stackexchange.com/questions/30816/macvim-mode-does-not-return-c-for-command-mode-when-pressing#answer-30817
+augroup test | au!
+  autocmd CmdlineEnter : redrawstatus
+augroup end
 
 " some overrides to the vim-dim colors
 source ~/.vimrc.colors
