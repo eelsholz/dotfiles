@@ -1,4 +1,3 @@
-# In ~/.zshrc above the line "source $ZSH/oh-my-zsh.sh" add the following line: source ~/.zshrc.user
 ZSH_THEME="agnoster-fork"
 
 plugins=(\
@@ -52,3 +51,7 @@ fff () {
 ffff () {
   cd /
 }
+
+# start oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
