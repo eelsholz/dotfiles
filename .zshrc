@@ -38,7 +38,7 @@ f () {
     return
   fi
   if [ -f "$1" ]; then
-    vim "$1"
+    nvim "$1"
     return
   fi
 }
