@@ -18,6 +18,7 @@ ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=white'
 
 # aliases
 alias c='clear'
+alias p='python3'
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
